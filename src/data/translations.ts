@@ -1,0 +1,760 @@
+import { TranslationData, LibraryBook } from '../types';
+
+export const translations: Record<'en' | 'ar' | 'ur', TranslationData> = {
+  en: {
+    nav: {
+      about: 'About',
+      education: 'Education',
+      vision: 'Future Vision',
+      values: 'Core Values',
+      journey: 'My Journey',
+      library: 'Digital Library',
+      quote: 'Contemplation',
+      contact: 'Contact',
+    },
+    hero: {
+      arabicName: 'الشيخ مطيب بن جاويد',
+      englishName: 'Sheikh Muteeb Bin Javed',
+      urduName: 'شیخ مطیب بن جاوید',
+      scholarRole: 'طالبُ العلمِ | Islamic Studies Student',
+      englishSubtitle: 'Seeking Knowledge • Serving Deen • Pursuing Excellence',
+      urduSubtitle: 'علم کی جستجو، دین کی خدمت اور علم میں آگے بڑھنے کا سفر',
+      btnJourney: 'My Journey',
+      btnEducation: 'Education',
+      btnVision: 'Future Goals',
+      btnContact: 'Contact',
+      statusBadge1: 'Salafia College for Islamic Studies',
+      statusBadge2: 'IGNOU — 1st Year',
+    },
+    about: {
+      sectionTitle: 'About Me',
+      sectionSubtitle: 'Academic Biography & Pursuit of Sacred Knowledge',
+      englishBio:
+        'I am Sheikh Muteeb Bin Javed, a student dedicated to the pursuit of Islamic knowledge. I am currently studying at Salafia College for Islamic Studies and pursuing my first year of studies through IGNOU. My goal is to continue developing my understanding of Islamic sciences through structured education, sincere study, and continuous learning.',
+      arabicBio:
+        'أنا الشيخ مطيب بن جاويد، طالبُ علمٍ أسعى إلى طلب العلم الشرعي وفهم العلوم الإسلامية، وأحرص على مواصلة التعلم والدراسة والاستفادة من أهل العلم.',
+      urduBio:
+        'میں شیخ مطیب بن جاوید ہوں۔ میں اسلامی علوم کے حصول اور دینی علم کی جستجو کے لیے کوشاں ہوں۔ میرا مقصد مسلسل مطالعہ، تعلیم اور اہلِ علم سے استفادہ کے ذریعے اپنے علمی سفر کو آگے بڑھانا ہے۔',
+      studentFocusTitle: 'Scholarly Method & Philosophy',
+      studentFocusDesc:
+        'Combining foundational classical Islamic sciences (Hadith, Fiqh, Usul, Nahw) with modern academic rigor, intellectual discipline, and sincere dedication to the authentic teachings of Islam.',
+    },
+    education: {
+      sectionTitle: 'Academic Education',
+      sectionSubtitle: 'Structured Institutional Learning & Studies',
+      salafiaTitle: 'Salafia College for Islamic Studies',
+      salafiaStatus: 'Currently Studying',
+      salafiaArabic: 'أدرس حالياً في كلية السلفية للدراسات الإسلامية',
+      salafiaUrdu: 'اس وقت سلفیہ کالج برائے اسلامی مطالعات میں زیرِ تعلیم ہوں۔',
+      salafiaDesc:
+        'Dedicated immersion in traditional Islamic disciplines including Quranic Exegesis (Tafsir), Hadith Methodology, Islamic Jurisprudence (Fiqh), Usul al-Fiqh, and Classical Arabic Grammar under learned faculty.',
+      ignouTitle: 'IGNOU (Indira Gandhi National Open University)',
+      ignouStatus: 'Currently studying — 1st Year',
+      ignouArabic: 'أدرس حالياً في السنة الأولى من خلال IGNOU',
+      ignouUrdu: 'IGNOU کے ذریعے اس وقت پہلے سال کی تعلیم حاصل کر رہا ہوں۔',
+      ignouDesc:
+        'Pursuing higher university studies to complement Islamic scholarship with structured academic foundations, critical research methodologies, and broader academic horizons.',
+    },
+    futureVision: {
+      quranicHeading: 'رَبِّ زِدْنِي عِلْمًا',
+      sectionSubtitle: 'Academic Aspirations & Long-term Vision',
+      englishText:
+        'In Sha Allah, I aspire to pursue higher Islamic studies at the Islamic University of Madinah and specialize in an appropriate field of Islamic sciences. My long-term academic ambition is to pursue a PhD and contribute to Islamic scholarship through knowledge, research, teaching, and beneficial work.',
+      arabicText:
+        'إن شاء الله، أطمح إلى مواصلة دراستي العليا في الجامعة الإسلامية بالمدينة المنورة، والتخصص في أحد مجالات العلوم الإسلامية المناسبة، ثم متابعة دراستي الأكاديمية حتى مرحلة الدكتوراه، وخدمة العلم والبحث والتعليم.',
+      urduText:
+        'ان شاء اللہ، میرا ارادہ ہے کہ مدینہ منورہ کی اسلامی یونیورسٹی میں اسلامی علوم کی اعلیٰ تعلیم حاصل کروں، کسی مناسب شعبۂ علومِ اسلامیہ میں تخصص کروں، اور مستقبل میں پی ایچ ڈی کے ذریعے علمی و تحقیقی میدان میں اپنا کردار ادا کروں۔',
+      aspirationTag: 'Future Academic Aspiration',
+      madinahGoalTitle: 'Islamic University of Madinah (Aspired)',
+      phdGoalTitle: 'Doctorate (PhD) & Academic Research',
+    },
+    values: {
+      sectionTitle: 'Guiding Values',
+      sectionSubtitle: 'The Moral and Spiritual Pillars of a Student of Knowledge',
+      items: [
+        {
+          arabic: 'العلم',
+          english: 'Knowledge',
+          urdu: 'علم',
+          descEn:
+            'Dedicated commitment to authentic Quranic and Prophetic knowledge, grounded in continuous research, verified comprehension, and lifelong study.',
+          descUr:
+            'قرآن و سنت کے مستند علم کے حصول کا پختہ عزم، جو مسلسل تحقیق اور عمر بھر کے مطالعے پر مبنی ہو۔',
+        },
+        {
+          arabic: 'الإخلاص',
+          english: 'Sincerity',
+          urdu: 'اخلاص',
+          descEn:
+            'Purifying intentions purely for the sake of Allah in every academic effort, seeking knowledge to serve and benefit the community.',
+          descUr:
+            'ہر علمی اور عملی قدم میں رضائے الٰہی کو پیشِ نظر رکھنا اور نیت کو خالص بنانا۔',
+        },
+        {
+          arabic: 'الأمانة',
+          english: 'Integrity',
+          urdu: 'امانت و دیانت',
+          descEn:
+            'Maintaining academic honesty, rigorous attribution to classical scholars, and trustworthy dissemination of religious guidance.',
+          descUr:
+            'علمی امانت داری، اسلاف کے اقوال کی درست نسبت، اور دین کی سچی رہنمائی۔',
+        },
+        {
+          arabic: 'التواضع',
+          english: 'Humility',
+          urdu: 'تواضع و انکساری',
+          descEn:
+            'Approaching sacred knowledge with deep modesty, acknowledging the vastness of the Deen and respecting respected scholars and teachers.',
+          descUr:
+            'علم کی وسعت کے سامنے عاجزی اختیار کرنا اور اہلِ علم و اساتذہ کا ادب و احترام۔',
+        },
+        {
+          arabic: 'الاستمرار',
+          english: 'Perseverance',
+          urdu: 'استقامت و استمرار',
+          descEn:
+            'Unwavering consistency, patience through demanding academic rigor, and steady progression in the journey of knowledge.',
+          descUr:
+            'علم کے راستے میں مستقل مزاجی، صبر اور مسلسل محنت کے ساتھ آگے بڑھتے رہنا۔',
+        },
+      ],
+    },
+    journey: {
+      sectionTitle: 'My Journey',
+      sectionSubtitle: 'A Progressive Chronicle of Learning, Current Milestones & Future Goals',
+      milestones: [
+        {
+          id: 'step-1',
+          title: 'Beginning of Educational Journey',
+          titleAr: 'بداية الرحلة التعليمية',
+          titleUr: 'تعلیمی سفر کا آغاز',
+          desc: 'Laying initial foundations in basic Islamic literacy, Arabic reading, and Quran recitation with heartfelt dedication.',
+          descAr: 'وضع اللبنات الأولى في القراءة العربية والقرآن الكريم والعلوم الأساسية.',
+          descUr: 'دینی تعلیم، عربی قراءت اور قرآن مجید کے بنیادی اسباق سے سفر کی ابتدا۔',
+          status: 'completed',
+          period: 'Foundational Phase',
+        },
+        {
+          id: 'step-2',
+          title: 'Islamic Studies at Salafia College',
+          titleAr: 'الدراسات الإسلامية في كلية السلفية',
+          titleUr: 'سلفیہ کالج میں اسلامی مطالعات',
+          desc: 'Formal enrollment in comprehensive Islamic curriculum encompassing Hadith, Fiqh, Usul, Nahw, and Tafsir.',
+          descAr: 'الالتحاق النظامي بكلية السلفية لدراسة الحديث والفقه والأصول والنحو والتفسير.',
+          descUr: 'سلفیہ کالج برائے اسلامی مطالعات میں باقاعدہ داخلہ اور کتبِ حدیث و فقہ کا مطالعہ۔',
+          status: 'current',
+          period: 'Current — Ongoing',
+        },
+        {
+          id: 'step-3',
+          title: 'IGNOU First Year Studies',
+          titleAr: 'السنة الأولى في جامعة IGNOU',
+          titleUr: 'IGNOU میں سالِ اول کی تعلیم',
+          desc: 'Commencing first-year university program through IGNOU to integrate broad academic methodologies.',
+          descAr: 'بدء الدراسة الجامعية في السنة الأولى عبر IGNOU لتعزيز المنهجية الأكاديمية.',
+          descUr: 'IGNOU کے ذریعے پہلے سال کے تعلیمی مرحلے کا آغاز اور تعلیمی افق کی توسیع۔',
+          status: 'current',
+          period: 'Current — 1st Year',
+        },
+        {
+          id: 'step-4',
+          title: 'Continuing Islamic Education',
+          titleAr: 'مواصلة طلب العلم الشرعي',
+          titleUr: 'مسلسل دینی و علمی ارتقاء',
+          desc: 'Deepening memorization, studying classical manuscripts and verified commentaries under qualified instructors.',
+          descAr: 'التعمق في حفظ المتون والكتب الأصيلة وشروحها على أيدي العلماء المعتبرين.',
+          descUr: 'متون کی حفظ اور شروح کے گہرے مطالعے کے ذریعے علمی استعداد میں اضافہ۔',
+          status: 'current',
+          period: 'Continuous Pursuit',
+        },
+        {
+          id: 'step-5',
+          title: 'Future Goal: Islamic University of Madinah',
+          titleAr: 'الهدف المستقبلي: الجامعة الإسلامية بالمدينة المنورة',
+          titleUr: 'مستقبل کا ہدف: مدینہ منورہ کی اسلامی یونیورسٹی',
+          desc: 'Aspiring to gain admission to the prestigious Islamic University of Madinah for specialized bachelor/master degrees in Islamic sciences.',
+          descAr: 'الطموح إلى الالتحاق بالجامعة الإسلامية بالمدينة المنورة للتخصص في أحد علوم الشريعة.',
+          descUr: 'مدینہ منورہ کی مایہ ناز اسلامی یونیورسٹی میں اعلیٰ تعلیم اور تخصص کا پختہ ارادہ۔',
+          status: 'future',
+          period: 'Future Aspiration',
+        },
+        {
+          id: 'step-6',
+          title: 'Long-Term Goal: PhD & Academic Research',
+          titleAr: 'الهدف البعيد: الدكتوراه والبحث الأكاديمي',
+          titleUr: 'طویل المدتی ہدف: پی ایچ ڈی اور علمی تحقیق',
+          desc: 'Achieving a PhD in Islamic sciences, publishing scholarly research papers, and actively serving the Muslim community through education.',
+          descAr: 'نيل درجة الدكتوراه في العلوم الإسلامية، ونشر البحوث العلمية، وخدمة المجتمع بالتعليم.',
+          descUr: 'پی ایچ ڈی مکمل کرنا، علمی مقالات و تصانیف پیش کرنا، اور تدریس و تحقیق کے ذریعے خدمت۔',
+          status: 'future',
+          period: 'Long-Term Vision',
+        },
+      ],
+    },
+    library: {
+      sectionTitle: 'Digital Library & Reading Shelf',
+      sectionSubtitle: 'Core Classical Texts & Reference Works in Islamic Sciences',
+      exploreBooks: 'Explore Selected Classical References',
+    },
+    quote: {
+      arabicVerse: 'وَقُلْ رَبِّ زِدْنِي عِلْمًا',
+      surahInfo: 'Surah Ta-Ha [20:114]',
+      english: 'And say: My Lord, increase me in knowledge.',
+      urdu: 'اور کہیے: اے میرے رب! میرے علم میں اضافہ فرما۔',
+    },
+    contact: {
+      sectionTitle: 'Academic Contact',
+      sectionSubtitle: 'Connect for Academic Collaboration, Inquiries & Sincere Benefaction',
+      emailLabel: 'Official Email',
+      phoneLabel: 'Direct Line / WhatsApp',
+      handleLabel: 'Digital Handle',
+      sendMessageTitle: 'Send an Academic Inquiry',
+      namePlaceholder: 'Your Name',
+      emailPlaceholder: 'Your Email Address',
+      subjectPlaceholder: 'Subject / Nature of Inquiry',
+      messagePlaceholder: 'Write your message or inquiry here...',
+      sendButton: 'Send Message',
+      successMessage: 'JazakAllah Khair! Your message has been prepared.',
+    },
+    footer: {
+      nameAr: 'الشيخ مطيب بن جاويد',
+      nameEn: 'Sheikh Muteeb Bin Javed',
+      role: 'طالبُ العلم',
+      motto: 'Seeking beneficial knowledge with sincerity.',
+      rights: 'All rights reserved. Dedicated to authentic Islamic scholarship.',
+    },
+  },
+  ar: {
+    nav: {
+      about: 'نبذة عني',
+      education: 'التعليم الأكاديمي',
+      vision: 'الرؤية المستقبلية',
+      values: 'القيم والمبادئ',
+      journey: 'رحلتي العلمية',
+      library: 'المكتبة الرقمية',
+      quote: 'تأملات قرآنية',
+      contact: 'التواصل',
+    },
+    hero: {
+      arabicName: 'الشيخ مطيب بن جاويد',
+      englishName: 'Sheikh Muteeb Bin Javed',
+      urduName: 'شیخ مطیب بن جاوید',
+      scholarRole: 'طالبُ العلمِ | Islamic Studies Student',
+      englishSubtitle: 'Seeking Knowledge • Serving Deen • Pursuing Excellence',
+      urduSubtitle: 'علم کی جستجو، دین کی خدمت اور علم میں آگے بڑھنے کا سفر',
+      btnJourney: 'رحلتي العلمية',
+      btnEducation: 'المسار التعليمي',
+      btnVision: 'الأهداف المستقبلية',
+      btnContact: 'تواصل معي',
+      statusBadge1: 'كلية السلفية للدراسات الإسلامية',
+      statusBadge2: 'جامعة IGNOU — السنة الأولى',
+    },
+    about: {
+      sectionTitle: 'نبذة عني',
+      sectionSubtitle: 'السيرة الأكاديمية والحرص على طلب العلم الشرعي',
+      englishBio:
+        'I am Sheikh Muteeb Bin Javed, a student dedicated to the pursuit of Islamic knowledge. I am currently studying at Salafia College for Islamic Studies and pursuing my first year of studies through IGNOU. My goal is to continue developing my understanding of Islamic sciences through structured education, sincere study, and continuous learning.',
+      arabicBio:
+        'أنا الشيخ مطيب بن جاويد، طالبُ علمٍ أسعى إلى طلب العلم الشرعي وفهم العلوم الإسلامية، وأحرص على مواصلة التعلم والدراسة والاستفادة من أهل العلم.',
+      urduBio:
+        'میں شیخ مطیب بن جاوید ہوں۔ میں اسلامی علوم کے حصول اور دینی علم کی جستجو کے لیے کوشاں ہوں۔ میرا مقصد مسلسل مطالعہ، تعلیم اور اہلِ علم سے استفادہ کے ذریعے اپنے علمی سفر کو آگے بڑھانا ہے۔',
+      studentFocusTitle: 'المنهجية العلمية والسمت',
+      studentFocusDesc:
+        'الجمع بين علوم الشريعة الأصيلة (الحديث، الفقه، أصول الفقه، علوم اللغة العربية) والمنهجية الأكاديمية المنضبطة مع الإخلاص لله تعالى.',
+    },
+    education: {
+      sectionTitle: 'التعليم والمسار الأكاديمي',
+      sectionSubtitle: 'الدراسة النظامية والمؤسسية للعلوم الإسلامية والجامعية',
+      salafiaTitle: 'كلية السلفية للدراسات الإسلامية',
+      salafiaStatus: 'أدرس حالياً',
+      salafiaArabic: 'أدرس حالياً في كلية السلفية للدراسات الإسلامية',
+      salafiaUrdu: 'اس وقت سلفیہ کالج برائے اسلامی مطالعات میں زیرِ تعلیم ہوں۔',
+      salafiaDesc:
+        'دراسة مكثفة للمقررات الشرعية التخصصية: التفسير، علوم الحديث، الفقه الإسلامي، أصول الفقه، وقواعد اللغة العربية تحت إشراف نخبة من أهل العلم.',
+      ignouTitle: 'جامعة أنديرا غاندي الوطنية المفتوحة (IGNOU)',
+      ignouStatus: 'أدرس حالياً — السنة الأولى',
+      ignouArabic: 'أدرس حالياً في السنة الأولى من خلال IGNOU',
+      ignouUrdu: 'IGNOU کے ذریعے اس وقت پہلے سال کی تعلیم حاصل کر رہا ہوں۔',
+      ignouDesc:
+        'متابعة التعليم الجامعي في السنة الأولى لدعم البحث الأكاديمي وتوسيع المدارك المنهجية والمعرفية.',
+    },
+    futureVision: {
+      quranicHeading: 'رَبِّ زِدْنِي عِلْمًا',
+      sectionSubtitle: 'الطموحات الأكاديمية والرؤية المستقبلية',
+      englishText:
+        'In Sha Allah, I aspire to pursue higher Islamic studies at the Islamic University of Madinah and specialize in an appropriate field of Islamic sciences. My long-term academic ambition is to pursue a PhD and contribute to Islamic scholarship through knowledge, research, teaching, and beneficial work.',
+      arabicText:
+        'إن شاء الله، أطمح إلى مواصلة دراستي العليا في الجامعة الإسلامية بالمدينة المنورة، والتخصص في أحد مجالات العلوم الإسلامية المناسبة، ثم متابعة دراستي الأكاديمية حتى مرحلة الدكتوراه، وخدمة العلم والبحث والتعليم.',
+      urduText:
+        'ان شاء اللہ، میرا ارادہ ہے کہ مدینہ منورہ کی اسلامی یونیورسٹی میں اسلامی علوم کی اعلیٰ تعلیم حاصل کروں، کسی مناسب شعبۂ علومِ اسلامیہ میں تخصص کروں، اور مستقبل میں پی ایچ ڈی کے ذریعے علمی و تحقیقی میدان میں اپنا کردار ادا کروں۔',
+      aspirationTag: 'طموح أكاديمي مستقبلي',
+      madinahGoalTitle: 'الجامعة الإسلامية بالمدينة المنورة (طموح منشود)',
+      phdGoalTitle: 'الدكتوراه والبحث العلمي الشرعي',
+    },
+    values: {
+      sectionTitle: 'القيم والركائز',
+      sectionSubtitle: 'أخلاق وآداب طالب العلم الشرعي',
+      items: [
+        {
+          arabic: 'العلم',
+          english: 'Knowledge',
+          urdu: 'علم',
+          descEn:
+            'Dedicated commitment to authentic Quranic and Prophetic knowledge, grounded in continuous research and lifelong study.',
+          descUr:
+            'قرآن و سنت کے مستند علم کے حصول کا پختہ عزم، جو مسلسل تحقیق اور عمر بھر کے مطالعے پر مبنی ہو۔',
+        },
+        {
+          arabic: 'الإخلاص',
+          english: 'Sincerity',
+          urdu: 'اخلاص',
+          descEn:
+            'Purifying intentions purely for the sake of Allah in every academic effort, seeking knowledge to serve and benefit the community.',
+          descUr:
+            'ہر علمی اور عملی قدم میں رضائے الٰہی کو پیشِ نظر رکھنا اور نیت کو خالص بنانا۔',
+        },
+        {
+          arabic: 'الأمانة',
+          english: 'Integrity',
+          urdu: 'امانت و دیانت',
+          descEn:
+            'Maintaining academic honesty, rigorous attribution to classical scholars, and trustworthy dissemination of religious guidance.',
+          descUr:
+            'علمی امانت داری، اسلاف کے اقوال کی درست نسبت، اور دین کی سچی رہنمائی۔',
+        },
+        {
+          arabic: 'التواضع',
+          english: 'Humility',
+          urdu: 'تواضع و انکساری',
+          descEn:
+            'Approaching sacred knowledge with deep modesty, acknowledging the vastness of the Deen and respecting respected scholars and teachers.',
+          descUr:
+            'علم کی وسعت کے سامنے عاجزی اختیار کرنا اور اہلِ علم و اساتذہ کا ادب و احترام۔',
+        },
+        {
+          arabic: 'الاستمرار',
+          english: 'Perseverance',
+          urdu: 'استقامت و استمرار',
+          descEn:
+            'Unwavering consistency, patience through demanding academic rigor, and steady progression in the journey of knowledge.',
+          descUr:
+            'علم کے راستے میں مستقل مزاجی، صبر اور مسلسل محنت کے ساتھ آگے بڑھتے رہنا۔',
+        },
+      ],
+    },
+    journey: {
+      sectionTitle: 'رحلتي العلمية',
+      sectionSubtitle: 'المراحل المنهجية والمحطات الحالية والأهداف القادمة',
+      milestones: [
+        {
+          id: 'step-1',
+          title: 'بداية الرحلة التعليمية',
+          titleAr: 'بداية الرحلة التعليمية',
+          titleUr: 'تعلیمی سفر کا آغاز',
+          desc: 'وضع اللبنات الأولى في القراءة العربية والقرآن الكريم والعلوم الأساسية بهمة وعناية.',
+          descAr: 'وضع اللبنات الأولى في القراءة العربية والقرآن الكريم والعلوم الأساسية.',
+          descUr: 'دینی تعلیم، عربی قراءت اور قرآن مجید کے بنیادی اسباق سے سفر کی ابتدا۔',
+          status: 'completed',
+          period: 'المرحلة التأسيسية',
+        },
+        {
+          id: 'step-2',
+          title: 'الدراسات الإسلامية في كلية السلفية',
+          titleAr: 'الدراسات الإسلامية في كلية السلفية',
+          titleUr: 'سلفیہ کالج میں اسلامی مطالعات',
+          desc: 'الالتحاق النظامي بكلية السلفية لدراسة الحديث والفقه والأصول والنحو والتفسير.',
+          descAr: 'الالتحاق النظامي بكلية السلفية لدراسة الحديث والفقه والأصول والنحو والتفسير.',
+          descUr: 'سلفیہ کالج برائے اسلامی مطالعات میں باقاعدہ داخلہ اور کتبِ حدیث و فقہ کا مطالعہ۔',
+          status: 'current',
+          period: 'المرحلة الحالية',
+        },
+        {
+          id: 'step-3',
+          title: 'السنة الأولى في جامعة IGNOU',
+          titleAr: 'السنة الأولى في جامعة IGNOU',
+          titleUr: 'IGNOU میں سالِ اول کی تعلیم',
+          desc: 'بدء الدراسة الجامعية في السنة الأولى عبر IGNOU لتعزيز المنهجية الأكاديمية.',
+          descAr: 'بدء الدراسة الجامعية في السنة الأولى عبر IGNOU لتعزيز المنهجية الأكاديمية.',
+          descUr: 'IGNOU کے ذریعے پہلے سال کے تعلیمی مرحلے کا آغاز اور تعلیمی افق کی توسیع۔',
+          status: 'current',
+          period: 'السنة الأولى الحالية',
+        },
+        {
+          id: 'step-4',
+          title: 'مواصلة طلب العلم الشرعي',
+          titleAr: 'مواصلة طلب العلم الشرعي',
+          titleUr: 'مسلسل دینی و علمی ارتقاء',
+          desc: 'التعمق في حفظ المتون والكتب الأصيلة وشروحها على أيدي العلماء المعتبرين.',
+          descAr: 'التعمق في حفظ المتون والكتب الأصيلة وشروحها على أيدي العلماء المعتبرين.',
+          descUr: 'متون کی حفظ اور شروح کے گہرے مطالعے کے ذریعے علمی استعداد میں اضافہ۔',
+          status: 'current',
+          period: 'استمرار وتطوير',
+        },
+        {
+          id: 'step-5',
+          title: 'الهدف المستقبلي: الجامعة الإسلامية بالمدينة المنورة',
+          titleAr: 'الهدف المستقبلي: الجامعة الإسلامية بالمدينة المنورة',
+          titleUr: 'مستقبل کا ہدف: مدینہ منورہ کی اسلامی یونیورسٹی',
+          desc: 'الطموح إلى الالتحاق بالجامعة الإسلامية بالمدينة المنورة للتخصص في أحد علوم الشريعة.',
+          descAr: 'الطموح إلى الالتحاق بالجامعة الإسلامية بالمدينة المنورة للتخصص في أحد علوم الشريعة.',
+          descUr: 'مدینہ منورہ کی مایہ ناز اسلامی یونیورسٹی میں اعلیٰ تعلیم اور تخصص کا پختہ ارادہ۔',
+          status: 'future',
+          period: 'طموح منشود',
+        },
+        {
+          id: 'step-6',
+          title: 'الهدف البعيد: الدكتوراه والبحث الأكاديمي',
+          titleAr: 'الهدف البعيد: الدكتوراه والبحث الأكاديمي',
+          titleUr: 'طویل المدتی ہدف: پی ایچ ڈی اور علمی تحقیق',
+          desc: 'نيل درجة الدكتوراه في العلوم الإسلامية، ونشر البحوث العلمية، وخدمة المجتمع بالتعليم.',
+          descAr: 'نيل درجة الدكتوراه في العلوم الإسلامية، ونشر البحوث العلمية، وخدمة المجتمع بالتعليم.',
+          descUr: 'پی ایچ ڈی مکمل کرنا، علمی مقالات و تصانیف پیش کرنا، اور تدریس و تحقیق کے ذریعے خدمت۔',
+          status: 'future',
+          period: 'رؤية مستقبلية',
+        },
+      ],
+    },
+    library: {
+      sectionTitle: 'المكتبة الرقمية وخزانة الكتب',
+      sectionSubtitle: 'أمهات الكتب والمراجع الأصيلة في العلوم الإسلامية',
+      exploreBooks: 'استعراض أمهات المصادر والكتب التأسيسية',
+    },
+    quote: {
+      arabicVerse: 'وَقُلْ رَبِّ زِدْنِي عِلْمًا',
+      surahInfo: 'سورة طه [١١٤]',
+      english: 'And say: My Lord, increase me in knowledge.',
+      urdu: 'اور کہیے: اے میرے رب! میرے علم میں اضافہ فرما۔',
+    },
+    contact: {
+      sectionTitle: 'التواصل العلمي',
+      sectionSubtitle: 'للتواصل الأكاديمي والاستفسارات العلمية النافعة',
+      emailLabel: 'البريد الإلكتروني الرسمي',
+      phoneLabel: 'رقم الهاتف / واتساب',
+      handleLabel: 'المعرف الرقمي',
+      sendMessageTitle: 'إرسال رسالة أو استفسار علمي',
+      namePlaceholder: 'الاسم الكريم',
+      emailPlaceholder: 'عنوان بريدك الإلكتروني',
+      subjectPlaceholder: 'موضوع الاستفسار',
+      messagePlaceholder: 'اكتب رسالتك أو استفسارك هنا...',
+      sendButton: 'إرسال الرسالة',
+      successMessage: 'جزاكم الله خيراً! تم تجهيز رسالتكم.',
+    },
+    footer: {
+      nameAr: 'الشيخ مطيب بن جاويد',
+      nameEn: 'Sheikh Muteeb Bin Javed',
+      role: 'طالبُ العلم',
+      motto: 'طلب العلم النافع بإخلاص لوجه الله تعالى.',
+      rights: 'جميع الحقوق محفوظة. مخصص لخدمة العلم الشرعي.',
+    },
+  },
+  ur: {
+    nav: {
+      about: 'میرے بارے میں',
+      education: 'تعلیمی سفر',
+      vision: 'مستقبل کا وژن',
+      values: 'بنیادی اقدار',
+      journey: 'علمی سفرنامہ',
+      library: 'ڈیجیٹل لائبریری',
+      quote: 'قرآنی پیغام',
+      contact: 'رابطہ',
+    },
+    hero: {
+      arabicName: 'الشيخ مطيب بن جاويد',
+      englishName: 'Sheikh Muteeb Bin Javed',
+      urduName: 'شیخ مطیب بن جاوید',
+      scholarRole: 'طالبُ العلمِ | Islamic Studies Student',
+      englishSubtitle: 'Seeking Knowledge • Serving Deen • Pursuing Excellence',
+      urduSubtitle: 'علم کی جستجو، دین کی خدمت اور علم میں آگے بڑھنے کا سفر',
+      btnJourney: 'میرا سفر',
+      btnEducation: 'تعلیم',
+      btnVision: 'مستقبل کے مقاصد',
+      btnContact: 'رابطہ کریں',
+      statusBadge1: 'سلفیہ کالج برائے اسلامی مطالعات',
+      statusBadge2: 'IGNOU — سالِ اول',
+    },
+    about: {
+      sectionTitle: 'میرے بارے میں',
+      sectionSubtitle: 'علمی تعارف اور دینی علوم کے حصول کا جذبہ',
+      englishBio:
+        'I am Sheikh Muteeb Bin Javed, a student dedicated to the pursuit of Islamic knowledge. I am currently studying at Salafia College for Islamic Studies and pursuing my first year of studies through IGNOU. My goal is to continue developing my understanding of Islamic sciences through structured education, sincere study, and continuous learning.',
+      arabicBio:
+        'أنا الشيخ مطيب بن جاويد، طالبُ علمٍ أسعى إلى طلب العلم الشرعي وفهم العلوم الإسلامية، وأحرص على مواصلة التعلم والدراسة والاستفادة من أهل العلم.',
+      urduBio:
+        'میں شیخ مطیب بن جاوید ہوں۔ میں اسلامی علوم کے حصول اور دینی علم کی جستجو کے لیے کوشاں ہوں۔ میرا مقصد مسلسل مطالعہ، تعلیم اور اہلِ علم سے استفادہ کے ذریعے اپنے علمی سفر کو آگے بڑھانا ہے۔',
+      studentFocusTitle: 'علمی منہج اور فکری رخ',
+      studentFocusDesc:
+        'روایتی مستند اسلامی علوم (حدیث، فقہ، اصول، نحو اور تفسیر) کو جدید تعلیمی نظم اور خلوصِ نیت کے ساتھ یکجا کرنے کی جستجو۔',
+    },
+    education: {
+      sectionTitle: 'تعلیمی کوائف',
+      sectionSubtitle: 'منظم دینی و عصری تعلیمی مراحل',
+      salafiaTitle: 'سلفیہ کالج برائے اسلامی مطالعات',
+      salafiaStatus: 'زیرِ تعلیم',
+      salafiaArabic: 'أدرس حالياً في كلية السلفية للدراسات الإسلامية',
+      salafiaUrdu: 'اس وقت سلفیہ کالج برائے اسلامی مطالعات میں زیرِ تعلیم ہوں۔',
+      salafiaDesc:
+        'تفسیر، حدیث، فقہ اسلامی، اصول فقہ اور عربی قواعد کا باقاعدہ و عمیق مطالعہ جید اساتذہ و علمائے کرام کی زیرِ سرپرستی۔',
+      ignouTitle: 'IGNOU (اندرا گاندھی نیشنل اوپن یونیورسٹی)',
+      ignouStatus: 'پہلا سال — زیرِ تعلیم',
+      ignouArabic: 'أدرس حالياً في السنة الأولى من خلال IGNOU',
+      ignouUrdu: 'IGNOU کے ذریعے اس وقت پہلے سال کی تعلیم حاصل کر رہا ہوں۔',
+      ignouDesc:
+        'عصری جامعاتی تعلیمی ڈگری کا پہلا سال تاکہ علمی استعداد، تحقیقی منہج اور وسعتِ نظر میں مزید نکھار پیدا ہو۔',
+    },
+    futureVision: {
+      quranicHeading: 'رَبِّ زِدْنِي عِلْمًا',
+      sectionSubtitle: 'تعلیمی عزائم اور مستقبل کا لائحہ عمل',
+      englishText:
+        'In Sha Allah, I aspire to pursue higher Islamic studies at the Islamic University of Madinah and specialize in an appropriate field of Islamic sciences. My long-term academic ambition is to pursue a PhD and contribute to Islamic scholarship through knowledge, research, teaching, and beneficial work.',
+      arabicText:
+        'إن شاء الله، أطمح إلى مواصلة دراستي العليا في الجامعة الإسلامية بالمدينة المنورة، والتخصص في أحد مجالات العلوم الإسلامية المناسبة، ثم متابعة دراستي الأكاديمية حتى مرحلة الدكتوراه، وخدمة العلم والبحث والتعليم.',
+      urduText:
+        'ان شاء اللہ، میرا ارادہ ہے کہ مدینہ منورہ کی اسلامی یونیورسٹی میں اسلامی علوم کی اعلیٰ تعلیم حاصل کروں، کسی مناسب شعبۂ علومِ اسلامیہ میں تخصص کروں، اور مستقبل میں پی ایچ ڈی کے ذریعے علمی و تحقیقی میدان میں اپنا کردار ادا کروں۔',
+      aspirationTag: 'مستقبل کا علمی ہدف',
+      madinahGoalTitle: 'اسلامک یونیورسٹی مدینہ منورہ (دلی آرزو)',
+      phdGoalTitle: 'پی ایچ ڈی اور تحقیقی تصنیفی خدمات',
+    },
+    values: {
+      sectionTitle: 'رہنما اصول و اقدار',
+      sectionSubtitle: 'طالب علم کے اخلاق، کردار اور فکری ستون',
+      items: [
+        {
+          arabic: 'العلم',
+          english: 'Knowledge',
+          urdu: 'علم',
+          descEn:
+            'Dedicated commitment to authentic Quranic and Prophetic knowledge, grounded in continuous research and lifelong study.',
+          descUr:
+            'قرآن و سنت کے مستند علم کے حصول کا پختہ عزم، جو مسلسل تحقیق اور عمر بھر کے مطالعے پر مبنی ہو۔',
+        },
+        {
+          arabic: 'الإخلاص',
+          english: 'Sincerity',
+          urdu: 'اخلاص',
+          descEn:
+            'Purifying intentions purely for the sake of Allah in every academic effort, seeking knowledge to serve and benefit the community.',
+          descUr:
+            'ہر علمی اور عملی قدم میں رضائے الٰہی کو پیشِ نظر رکھنا اور نیت کو خالص بنانا۔',
+        },
+        {
+          arabic: 'الأمانة',
+          english: 'Integrity',
+          urdu: 'امانت و دیانت',
+          descEn:
+            'Maintaining academic honesty, rigorous attribution to classical scholars, and trustworthy dissemination of religious guidance.',
+          descUr:
+            'علمی امانت داری، اسلاف کے اقوال کی درست نسبت، اور دین کی سچی رہنمائی۔',
+        },
+        {
+          arabic: 'التواضع',
+          english: 'Humility',
+          urdu: 'تواضع و انکساری',
+          descEn:
+            'Approaching sacred knowledge with deep modesty, acknowledging the vastness of the Deen and respecting respected scholars and teachers.',
+          descUr:
+            'علم کی وسعت کے سامنے عاجزی اختیار کرنا اور اہلِ علم و اساتذہ کا ادب و احترام۔',
+        },
+        {
+          arabic: 'الاستمرار',
+          english: 'Perseverance',
+          urdu: 'استقامت و استمرار',
+          descEn:
+            'Unwavering consistency, patience through demanding academic rigor, and steady progression in the journey of knowledge.',
+          descUr:
+            'علم کے راستے میں مستقل مزاجی، صبر اور مسلسل محنت کے ساتھ آگے بڑھتے رہنا۔',
+        },
+      ],
+    },
+    journey: {
+      sectionTitle: 'علمی سفرنامہ',
+      sectionSubtitle: 'ابتدائی بنیادوں سے لے کر موجودہ مراحل اور مستقبل کے عزائم تک',
+      milestones: [
+        {
+          id: 'step-1',
+          title: 'تعلیمی سفر کا آغاز',
+          titleAr: 'بداية الرحلة التعليمية',
+          titleUr: 'تعلیمی سفر کا آغاز',
+          desc: 'دینی تعلیم، عربی قراءت اور قرآن مجید کے بنیادی اسباق سے سفر کی ابتدا۔',
+          descAr: 'وضع اللبنات الأولى في القراءة العربية والقرآن الكريم والعلوم الأساسية.',
+          descUr: 'دینی تعلیم، عربی قراءت اور قرآن مجید کے بنیادی اسباق سے سفر کی ابتدا۔',
+          status: 'completed',
+          period: 'بنیادی مرحلہ',
+        },
+        {
+          id: 'step-2',
+          title: 'سلفیہ کالج میں اسلامی مطالعات',
+          titleAr: 'الدراسات الإسلامية في كلية السلفية',
+          titleUr: 'سلفیہ کالج میں اسلامی مطالعات',
+          desc: 'سلفیہ کالج برائے اسلامی مطالعات میں باقاعدہ داخلہ اور کتبِ حدیث و فقہ کا مطالعہ۔',
+          descAr: 'الالتحاق النظامي بكلية السلفية لدراسة الحديث والفقه والأصول والنحو والتفسير.',
+          descUr: 'سلفیہ کالج برائے اسلامی مطالعات میں باقاعدہ داخلہ اور کتبِ حدیث و فقہ کا مطالعہ۔',
+          status: 'current',
+          period: 'موجودہ مرحلہ — جاری',
+        },
+        {
+          id: 'step-3',
+          title: 'IGNOU میں سالِ اول کی تعلیم',
+          titleAr: 'السنة الأولى في جامعة IGNOU',
+          titleUr: 'IGNOU میں سالِ اول کی تعلیم',
+          desc: 'IGNOU کے ذریعے پہلے سال کے تعلیمی مرحلے کا آغاز اور تعلیمی افق کی توسیع۔',
+          descAr: 'بدء الدراسة الجامعية في السنة الأولى عبر IGNOU لتعزيز المنهجية الأكاديمية.',
+          descUr: 'IGNOU کے ذریعے پہلے سال کے تعلیمی مرحلے کا آغاز اور تعلیمی افق کی توسیع۔',
+          status: 'current',
+          period: 'موجودہ — سالِ اول',
+        },
+        {
+          id: 'step-4',
+          title: 'مسلسل دینی و علمی ارتقاء',
+          titleAr: 'مواصلة طلب العلم الشرعي',
+          titleUr: 'مسلسل دینی و علمی ارتقاء',
+          desc: 'متون کی حفظ اور شروح کے گہرے مطالعے کے ذریعے علمی استعداد میں اضافہ۔',
+          descAr: 'التعمق في حفظ المتون والكتب الأصيلة وشروحها على أيدي العلماء المعتبرين.',
+          descUr: 'متون کی حفظ اور شروح کے گہرے مطالعے کے ذریعے علمی استعداد میں اضافہ۔',
+          status: 'current',
+          period: 'مسلسل جستجو',
+        },
+        {
+          id: 'step-5',
+          title: 'مستقبل کا ہدف: مدینہ منورہ کی اسلامی یونیورسٹی',
+          titleAr: 'الهدف المستقبلي: الجامعة الإسلامية بالمدينة المنورة',
+          titleUr: 'مستقبل کا ہدف: مدینہ منورہ کی اسلامی یونیورسٹی',
+          desc: 'مدینہ منورہ کی مایہ ناز اسلامی یونیورسٹی میں اعلیٰ تعلیم اور تخصص کا پختہ ارادہ۔',
+          descAr: 'الطموح إلى الالتحاق بالجامعة الإسلامية بالمدينة المنورة للتخصص في أحد علوم الشريعة.',
+          descUr: 'مدینہ منورہ کی مایہ ناز اسلامی یونیورسٹی میں اعلیٰ تعلیم اور تخصص کا پختہ ارادہ۔',
+          status: 'future',
+          period: 'مستقبل کا خواب',
+        },
+        {
+          id: 'step-6',
+          title: 'طویل المدتی ہدف: پی ایچ ڈی اور علمی تحقیق',
+          titleAr: 'الهدف البعيد: الدكتوراه والبحث الأكاديمي',
+          titleUr: 'طویل المدتی ہدف: پی ایچ ڈی اور علمی تحقیق',
+          desc: 'پی ایچ ڈی مکمل کرنا، علمی مقالات و تصانیف پیش کرنا، اور تدریس و تحقیق کے ذریعے خدمت۔',
+          descAr: 'نيل درجة الدكتوراه في العلوم الإسلامية، ونشر البحوث العلمية، وخدمة المجتمع بالتعليم.',
+          descUr: 'پی ایچ ڈی مکمل کرنا، علمی مقالات و تصانیف پیش کرنا، اور تدریس و تحقیق کے ذریعے خدمت۔',
+          status: 'future',
+          period: 'طویل المدتی وژن',
+        },
+      ],
+    },
+    library: {
+      sectionTitle: 'ڈیجیٹل لائبریری و علمی کتب',
+      sectionSubtitle: 'علومِ اسلامیہ کی بنیادی اور مستند امہات الکتب',
+      exploreBooks: 'منتخب مستند کتب کا مطالعہ و تعارف',
+    },
+    quote: {
+      arabicVerse: 'وَقُلْ رَبِّ زِدْنِي عِلْمًا',
+      surahInfo: 'سورۃ طٰہٰ [۱۱۴]',
+      english: 'And say: My Lord, increase me in knowledge.',
+      urdu: 'اور کہیے: اے میرے رب! میرے علم میں اضافہ فرما۔',
+    },
+    contact: {
+      sectionTitle: 'علمی رابطہ',
+      sectionSubtitle: 'علمی استفادہ، مشورے اور بامقصد رابطے کے لیے',
+      emailLabel: 'سرکاری ای میل',
+      phoneLabel: 'براہِ راست فون / واٹس ایپ',
+      handleLabel: 'ڈیجیٹل ہینڈل',
+      sendMessageTitle: 'علمی پیغام یا استفسار بھیجیں',
+      namePlaceholder: 'آپ کا اسم گرامی',
+      emailPlaceholder: 'آپ کا ای میل پتہ',
+      subjectPlaceholder: 'استفسار کا عنوان',
+      messagePlaceholder: 'اپنا پیغام یا استفسار یہاں تحریر فرمائیں...',
+      sendButton: 'پیغام ارسال کریں',
+      successMessage: 'جزاکم اللہ خیراً! آپ کا پیغام مرتب ہو چکا ہے۔',
+    },
+    footer: {
+      nameAr: 'الشيخ مطيب بن جاويد',
+      nameEn: 'Sheikh Muteeb Bin Javed',
+      role: 'طالبُ العلم',
+      motto: 'خلوصِ نیت کے ساتھ نفع بخش علم کا حصول۔',
+      rights: 'جملہ حقوق محفوظ ہیں۔ خالص دینی و علمی خدمات کے لیے۔',
+    },
+  },
+};
+
+export const classicalBooks: LibraryBook[] = [
+  {
+    id: 'bukhari',
+    titleAr: 'صحيح البخاري',
+    titleEn: 'Sahih al-Bukhari',
+    author: 'الإمام محمد بن إسماعيل البخاري',
+    discipline: 'Hadith Sciences (الحديث النبوي)',
+    disciplineAr: 'علم الحديث الشريف',
+    summaryEn:
+      'The most authentic book after the Holy Quran, containing thousands of rigorously authenticated traditions of Prophet Muhammad (ﷺ).',
+    summaryAr: 'أصح كتاب بعد كتاب الله تعالى، جمع فيه الإمام البخاري أصح الأحاديث النبوية المسندة.',
+    summaryUr: 'کتاب اللہ کے بعد سب سے صحیح ترین کتاب، جس میں رسول اللہ ﷺ کی صحیح ترین احادیث درج ہیں۔',
+    level: 'Foundational Reference',
+    tags: ['Hadith', 'Sahih', 'Sunnah'],
+  },
+  {
+    id: 'bulugh',
+    titleAr: 'بلوغ المرام من أدلة الأحكام',
+    titleEn: 'Bulugh al-Maram',
+    author: 'الحافظ ابن حجر العسقلاني',
+    discipline: 'Hadith of Legal Rulings (أحاديث الأحكام)',
+    disciplineAr: 'أحاديث الأحكام الفقهية',
+    summaryEn:
+      'A concise compilation of legal Hadith categorized according to jurisprudence chapters with precise gradings by Ibn Hajar.',
+    summaryAr: 'مختصر جامع في أحاديث الأحكام مرتب على الأبواب الفقهية مع بيان درجة كل حديث بدقة.',
+    summaryUr: 'فقہی احکام پر مبنی احادیث کا مستند اور جامع مجموعہ، جسے حافظ ابن حجر نے مرتب فرمایا۔',
+    level: 'Core Curriculum',
+    tags: ['Fiqh Hadith', 'Ahkam', 'Ibn Hajar'],
+  },
+  {
+    id: 'wasitiyyah',
+    titleAr: 'العقيدة الواسطية',
+    titleEn: 'Al-Aqidah al-Wasitiyyah',
+    author: 'شيخ الإسلام ابن تيمية',
+    discipline: 'Islamic Creed (العقيدة والتوحيد)',
+    disciplineAr: 'العقيدة الإسلامية والتوحيد',
+    summaryEn:
+      'A clear, structured treatise elucidating the authentic creed of Ahl al-Sunnah wal-Jamaah concerning the Divine Names and Attributes.',
+    summaryAr: 'رسالة جليلة بينت عقيدة أهل السنة والجماعة في أسماء الله وصفاته وسائر أصول الإيمان.',
+    summaryUr: 'اہل سنت والجماعت کے سچے عقیدہ اور توحیدِ اسماء و صفات پر مشتمل ایک جامع و مدلل رسالہ۔',
+    level: 'Essential Creed',
+    tags: ['Aqeedah', 'Tawheed', 'Ahl al-Sunnah'],
+  },
+  {
+    id: 'ajrumiyyah',
+    titleAr: 'المقدمة الآجرومية',
+    titleEn: 'Al-Muqaddimah al-Ajrumiyyah',
+    author: 'ابن آجروم الصنهاجي',
+    discipline: 'Arabic Grammar (النحو العربي)',
+    disciplineAr: 'علم النحو وقواعد العربية',
+    summaryEn:
+      'The foundational primer for mastering classical Arabic syntax and sentence parsing (Irab), essential for any student of Islamic sciences.',
+    summaryAr: 'المتن التأسيسي المبارك لضبط قواعد النحو والإعراب، وهو مفتاح فهم نصوص الشريعة.',
+    summaryUr: 'عربی گرامر اور نحو کی بنیادی و مشہور ترین کتاب، جو نصوصِ شرعیہ کو سمجھنے کی کلید ہے۔',
+    level: 'Linguistic Gateway',
+    tags: ['Arabic', 'Nahw', 'Grammar'],
+  },
+  {
+    id: 'usul-thalatha',
+    titleAr: 'الأصول الثلاثة وأدلتها',
+    titleEn: 'Al-Usul al-Thalatha',
+    author: 'الشيخ محمد بن عبد الوهاب',
+    discipline: 'Fundamental Principles (أصول الدين)',
+    disciplineAr: 'أصول الدين ومعرفة الرب والدين والنبي',
+    summaryEn:
+      'An essential text explaining the three core questions of the grave: knowledge of Allah, knowledge of Islam with proofs, and knowledge of the Prophet (ﷺ).',
+    summaryAr: 'رسالة جامعة في معرفة العبد ربه، ودينه، ونبيه محمداً ﷺ بالأدلة الشرعية من الكتاب والسنة.',
+    summaryUr: 'تین بنیادی اصول: بندے کا اپنے رب، دینِ اسلام اور نبی ﷺ کو دلائل کے ساتھ جاننا۔',
+    level: 'Foundational Primer',
+    tags: ['Principles', 'Tawheed', 'Fundamentals'],
+  },
+  {
+    id: 'waraqat',
+    titleAr: 'الورقات في أصول الفقه',
+    titleEn: 'Al-Waraqat fi Usul al-Fiqh',
+    author: 'إمام الحرمين الجويني',
+    discipline: 'Principles of Jurisprudence (أصول الفقه)',
+    disciplineAr: 'أصول الفقه والاستنباط',
+    summaryEn:
+      'A primer introducing the mechanics of legal reasoning, evidence derivation, command/prohibition, and the methodology of Islamic jurisprudence.',
+    summaryAr: 'مقدمة موجزة في قواعد أصول الفقه وأدلة الأحكام وطرق الاستنباط الشرعي.',
+    summaryUr: 'اصولِ فقہ اور احکامِ شرعیہ کے استنباط کے بنیادی قواعد کا جامع و پُر اثر تعارف۔',
+    level: 'Methodology Gateway',
+    tags: ['Usul al-Fiqh', 'Jurisprudence', 'Deduction'],
+  },
+];
